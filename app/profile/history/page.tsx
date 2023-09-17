@@ -18,7 +18,7 @@ export default async function History() {
       Chapter: true,
     },
     orderBy: {
-      created: "asc",
+      created: "desc",
     },
   });
 
@@ -42,14 +42,16 @@ export default async function History() {
       </Link>
       <div className="text-xl font-bold py-2">테스트 기록</div>
       <div className="flex flex-col space-y-2">
-        {history.map((data, index) => (
+        {history.map((data: any, index: number) => (
           <div
             key={index}
             className="flex text-sm bg-white p-2 rounded-md justify-between items-center"
           >
             <div className="text-lg font-semibold">{data.Chapter?.title}</div>
-            <div>
-              <div className="font-semibold">정확도 : {data.accuracy}%</div>
+            <div className="flex flex-col items-end justify-center">
+              <div className="font-semibold">
+                정확도 : {data.accuracy.toFixed(2)}%
+              </div>
               <div className="text-xs">{convertDate(data.created)}</div>
             </div>
           </div>
