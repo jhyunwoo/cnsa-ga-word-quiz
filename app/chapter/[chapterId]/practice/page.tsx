@@ -17,6 +17,7 @@ export default async function Practice({
     },
   });
   const chapterOrigin = chapterInfo?.words[0].origin;
+
   const chapterList = await prisma.chapter.findMany({
     select: {
       id: true,
@@ -33,6 +34,7 @@ export default async function Practice({
     (data: { id: string; words: { meaningOfOrigin: string }[] }) =>
       data.id === params.chapterId
   );
+
   let originWrong = chapterList.filter(
     (data: { id: string; words: { meaningOfOrigin: string }[] }) =>
       data.id !== params.chapterId
@@ -54,6 +56,7 @@ export default async function Practice({
       chapterId: params.chapterId,
     },
   });
+  console.log(wordList);
 
   const wordMeaningList = [];
   for (let i = 0; i < wordList.length; i += 1) {
@@ -83,8 +86,6 @@ export default async function Practice({
     }
   }
   const shuffledQuiz = [...quizList].sort(() => Math.random() - 0.5);
-
-  console.log(shuffledQuiz);
 
   return (
     <QuizArea

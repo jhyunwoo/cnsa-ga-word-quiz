@@ -28,7 +28,7 @@ const wordData = [
     origin: "a, ac, ad",
     meaningOfOrigin: "~쪽으로(to)",
     word: "adopt",
-    meaning: "입약하다, 채택하다",
+    meaning: "입양하다, 채택하다",
   },
   {
     chapterId: "clmn4k21k0000znlzy5604qps",
@@ -873,6 +873,7 @@ const wordData = [
 ];
 
 export async function GET() {
+  return NextResponse.json("hello");
   const createWords = await prisma.word.createMany({
     data: wordData,
   });
