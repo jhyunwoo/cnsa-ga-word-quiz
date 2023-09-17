@@ -1,8 +1,10 @@
 "use client";
 
+import { loadingState } from "@/lib/recoil";
 import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { useSetRecoilState } from "recoil";
 
 type QuizType = {
   id: string;
@@ -33,12 +35,15 @@ export default function QuizArea({
     answer: any;
   }>({ result: null, answer: "" });
 
+  const setLoading = useSetRecoilState(loadingState);
+
   const [testResult, setTestResult] = useState<boolean[]>([]);
 
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
   async function checkOriginAnswer() {
+    setLoading(true);
     const check = await fetch("/api/quiz/origin", {
       method: "PUT",
       body: JSON.stringify({ chapterId: chapterId, answer: answer }),
@@ -46,9 +51,11 @@ export default function QuizArea({
     const checkResult = await check.json();
     setResult(checkResult);
     setTestResult((prev) => [...prev, checkResult.result]);
+    setLoading(false);
   }
 
   async function checkAnswer() {
+    setLoading(true);
     const check = await fetch("/api/quiz/word", {
       method: "PUT",
       body: JSON.stringify({
@@ -65,6 +72,7 @@ export default function QuizArea({
     const checkResult = await check.json();
     setResult(checkResult);
     setTestResult((prev) => [...prev, checkResult.result]);
+    setLoading(false);
   }
 
   function getAccuracy(resultData: boolean[]) {
@@ -78,6 +86,7 @@ export default function QuizArea({
   }
 
   async function updateResult() {
+    setLoading(true);
     const update = await fetch("/api/test", {
       method: "POST",
       body: JSON.stringify({
@@ -88,6 +97,7 @@ export default function QuizArea({
     });
     const updateResult = await update.json();
     router.push(`/chapter/${chapterId}`);
+    setLoading(false);
   }
 
   useEffect(() => {
@@ -271,7 +281,7 @@ export default function QuizArea({
       ) : (
         <div className=" p-4 w-full  fixed top-1/3 left-0">
           <div className="bg-white p-4 rounded-lg flex flex-col">
-            <div className="text-xl font-bold mx-auto">태스트 완료</div>
+            <div className="text-xl font-bold mx-auto">테스트 완료</div>
             <div className="text-lg font-semibold mx-auto">
               정확도 {getAccuracy(testResult).toFixed(2)}%
             </div>

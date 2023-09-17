@@ -1,8 +1,10 @@
 "use client";
 
+import { loadingState } from "@/lib/recoil";
 import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { useSetRecoilState } from "recoil";
 
 type QuizType = {
   id: string;
@@ -33,18 +35,23 @@ export default function QuizArea({
     answer: any;
   }>({ result: null, answer: "" });
 
+  const setLoading = useSetRecoilState(loadingState);
+
   const inputRef = useRef<HTMLInputElement>(null);
 
   async function checkOriginAnswer() {
+    setLoading(true);
     const check = await fetch("/api/quiz/origin", {
       method: "PUT",
       body: JSON.stringify({ chapterId: chapterId, answer: answer }),
     });
     const checkResult = await check.json();
     setResult(checkResult);
+    setLoading(false);
   }
 
   async function checkAnswer() {
+    setLoading(true);
     const check = await fetch("/api/quiz/word", {
       method: "PUT",
       body: JSON.stringify({
@@ -60,6 +67,7 @@ export default function QuizArea({
     });
     const checkResult = await check.json();
     setResult(checkResult);
+    setLoading(false);
   }
 
   useEffect(() => {

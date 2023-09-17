@@ -8,7 +8,6 @@ export async function GET() {
       results: true,
     },
   });
-  console.log(userList);
 
   let ranking = [];
   for (let i = 0; i < userList.length; i += 1) {
@@ -26,7 +25,6 @@ export async function GET() {
   ranking.sort(function (a, b) {
     return b.accuracy - a.accuracy;
   });
-  console.log(ranking);
 
   return NextResponse.json(ranking);
 }

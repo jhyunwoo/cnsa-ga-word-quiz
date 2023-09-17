@@ -1,8 +1,10 @@
+import Recoil from "@/components/Recoil";
 import AuthProvider from "./AuthProvider";
 import BottomBar from "./BottomBar";
 import Header from "./Header";
 import "./globals.css";
 import type { Metadata } from "next";
+import Loading from "@/components/Loading";
 
 export const metadata: Metadata = {
   title: "이뿌영 퀴즈",
@@ -18,9 +20,12 @@ export default function RootLayout({
     <html lang="kr">
       <body className="bg-slate-50 scrollbar-hide">
         <AuthProvider>
-          <Header />
-          <BottomBar />
-          {children}
+          <Recoil>
+            <Header />
+            <BottomBar />
+            <Loading />
+            {children}
+          </Recoil>
         </AuthProvider>
       </body>
     </html>
