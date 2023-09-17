@@ -56,7 +56,6 @@ export default async function Practice({
       chapterId: params.chapterId,
     },
   });
-  console.log(wordList);
 
   const wordMeaningList = [];
   for (let i = 0; i < wordList.length; i += 1) {
@@ -65,24 +64,26 @@ export default async function Practice({
 
   let quizList = [];
 
-  for (let i = 0; i < wordList.length; i += 1) {
+  while (wordList.length > 0) {
     const randomIndex = Math.floor(Math.random() * 2);
     if (randomIndex === 0) {
       quizList.push({
-        id: wordList[i].id,
-        origin: wordList[i].origin,
-        meaningOfOrigin: wordList[i].meaningOfOrigin,
-        word: wordList[i].word,
+        id: wordList[0].id,
+        origin: wordList[0].origin,
+        meaningOfOrigin: wordList[0].meaningOfOrigin,
+        word: wordList[0].word,
         meaning: null,
       });
+      wordList.splice(0, 1);
     } else {
       quizList.push({
-        id: wordList[i].id,
-        origin: wordList[i].origin,
-        meaningOfOrigin: wordList[i].meaningOfOrigin,
+        id: wordList[0].id,
+        origin: wordList[0].origin,
+        meaningOfOrigin: wordList[0].meaningOfOrigin,
         word: null,
-        meaning: wordList[i].meaning,
+        meaning: wordList[0].meaning,
       });
+      wordList.splice(0, 1);
     }
   }
   const shuffledQuiz = [...quizList].sort(() => Math.random() - 0.5);

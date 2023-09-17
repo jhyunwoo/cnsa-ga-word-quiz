@@ -44,6 +44,7 @@ model User {
   created       DateTime  @default(now())
   accounts      Account[]
   sessions      Session[]
+  results       Result[]
 }
 
 model VerificationToken {
@@ -55,9 +56,10 @@ model VerificationToken {
 }
 
 model Chapter {
-  id    String @id @default(cuid())
-  title String
-  words Word[]
+  id     String   @id @default(cuid())
+  title  String
+  words  Word[]
+  Result Result[]
 }
 
 model Word {
@@ -68,4 +70,15 @@ model Word {
   meaning         String
   Chapter         Chapter @relation(fields: [chapterId], references: [id])
   chapterId       String
+}
+
+model Result {
+  id        String    @id @default(cuid())
+  User      User?     @relation(fields: [userId], references: [id])
+  userId    String?
+  Chapter   Chapter?  @relation(fields: [chapterId], references: [id])
+  chapterId String?
+  results   Boolean[]
+  accuracy  Float
+  created   DateTime  @default(now())
 }

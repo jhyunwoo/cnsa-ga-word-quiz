@@ -1,7 +1,7 @@
 "use client";
 
 import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 type QuizType = {
@@ -33,7 +33,10 @@ export default function QuizArea({
     answer: any;
   }>({ result: null, answer: "" });
 
+  const [testResult, setTestResult] = useState<boolean[]>([]);
+
   const inputRef = useRef<HTMLInputElement>(null);
+  const router = useRouter();
 
   async function checkOriginAnswer() {
     const check = await fetch("/api/quiz/origin", {
@@ -42,6 +45,7 @@ export default function QuizArea({
     });
     const checkResult = await check.json();
     setResult(checkResult);
+    setTestResult((prev) => [...prev, checkResult.result]);
   }
 
   async function checkAnswer() {
@@ -60,6 +64,30 @@ export default function QuizArea({
     });
     const checkResult = await check.json();
     setResult(checkResult);
+    setTestResult((prev) => [...prev, checkResult.result]);
+  }
+
+  function getAccuracy(resultData: boolean[]) {
+    let correctCount = 0;
+    for (let i = 0; i < resultData.length; i += 1) {
+      if (resultData[i] === true) {
+        correctCount++;
+      }
+    }
+    return (correctCount / resultData.length) * 100;
+  }
+
+  async function updateResult() {
+    const update = await fetch("/api/test", {
+      method: "POST",
+      body: JSON.stringify({
+        chapterId: chapterId,
+        result: testResult,
+        accuracy: getAccuracy(testResult),
+      }),
+    });
+    const updateResult = await update.json();
+    router.push(`/chapter/${chapterId}`);
   }
 
   useEffect(() => {
@@ -243,13 +271,16 @@ export default function QuizArea({
       ) : (
         <div className=" p-4 w-full  fixed top-1/3 left-0">
           <div className="bg-white p-4 rounded-lg flex flex-col">
-            <div className="text-xl font-bold mx-auto">학습 완료</div>
-            <Link
-              href={`/chapter/${chapterId}`}
+            <div className="text-xl font-bold mx-auto">태스트 완료</div>
+            <div className="text-lg font-semibold mx-auto">
+              정확도 {getAccuracy(testResult).toFixed(2)}%
+            </div>
+            <button
+              onClick={updateResult}
               className="w-full p-2 bg-indigo-400 text-white font-semibold hover:bg-indigo-500 transition duration-200 rounded-lg text-center mt-4"
             >
               확인
-            </Link>
+            </button>
           </div>
         </div>
       )}
