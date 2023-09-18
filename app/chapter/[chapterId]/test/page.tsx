@@ -183,7 +183,7 @@ export default function Practice({
               </button>
             </form>
           ) : (
-            <div className="w-full h-48 rounded-md bg-slate-200 animate-pulse" />
+            <div className="w-full h-48 rounded-md bg-slate-200 animate-pulse md:max-w-md" />
           )}
         </div>
       )}
