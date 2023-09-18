@@ -2,6 +2,7 @@ import prisma from "@/lib/prisma";
 import { ChevronDoubleLeftIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import TestButton from "./TestButton";
+import Layout from "@/components/Layout";
 
 export default async function Chapter({
   params,
@@ -19,7 +20,7 @@ export default async function Chapter({
   });
 
   return (
-    <>
+    <Layout>
       <Link href={"/"} className="flex items-center justify-start py-2 group">
         <ChevronDoubleLeftIcon className="w-6 h-6" />
         <div className="group-hover:underline">Home</div>
@@ -41,6 +42,6 @@ export default async function Chapter({
         </Link>
         <TestButton chapterId={params.chapterId} />
       </div>
-    </>
+    </Layout>
   );
 }

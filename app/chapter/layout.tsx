@@ -6,5 +6,5 @@ export default async function ChapterLayout({
 }: {
   children: ReactNode;
 }) {
-  return <Layout>{children}</Layout>;
+  return <>{children}</>;
 }

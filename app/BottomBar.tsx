@@ -14,7 +14,13 @@ export default function BottomBar() {
   const pathname = usePathname();
   const { status } = useSession();
   return (
-    <div className="fixed bottom-0 left-0 w-full py-4 px-2 flex justify-center items-center">
+    <div
+      className={`fixed bottom-0 left-0 w-full py-4 px-2 flex justify-center items-center ${
+        pathname.includes("/practice") || pathname.includes("/test")
+          ? "hidden"
+          : ""
+      }`}
+    >
       <div className="bg-white rounded-full p-2 flex justify-around items-center w-full space-x-2 shadow-lg">
         <Link
           href={"/ranking"}
