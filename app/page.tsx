@@ -7,7 +7,7 @@ export default async function Home() {
 
   return (
     <Layout>
-      <div className="grid grid-cols-1 w-full gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full gap-2">
         {chapters?.map((data, index) => (
           <Link
             href={`/chapter/${data.id}`}
