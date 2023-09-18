@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Layout from "@/components/Layout";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
@@ -12,5 +13,10 @@ export const metadata: Metadata = {
 };
 
 export default function RankingLayout({ children }: { children: ReactNode }) {
-  return <Layout>{children}</Layout>;
+  return (
+    <>
+      <Layout>{children}</Layout>
+      <Footer />
+    </>
+  );
 }
