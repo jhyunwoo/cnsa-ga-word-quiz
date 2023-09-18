@@ -48,7 +48,7 @@ export default function Practice({
         method: "PUT",
         body: JSON.stringify({
           question: quiz[count].question,
-          answer: data.userAnswer,
+          answer: data.userAnswer.toLowerCase(),
           type: quiz[count].type,
         }),
       });
@@ -125,8 +125,8 @@ export default function Practice({
           </div>
         </div>
       ) : (
-        <div className="w-full h-screen flex flex-col justify-between p-4 pt-14">
-          <div className="p-4 rounded-lg bg-white text-lg font-semibold shadow-md">
+        <div className="w-full min-h-screen flex flex-col justify-center items-center p-4 pt-14">
+          <div className="p-4 rounded-lg bg-white text-lg font-semibold shadow-md w-full my-4">
             {quiz.length > 0 ? (
               <div>
                 {count + 1}. {quiz[count]?.question}
