@@ -105,7 +105,7 @@ export default function Practice({
     <>
       {answer?.result !== null ? (
         <div className="w-full h-screen flex justify-center items-center p-8">
-          <div className="p-4 rounded-md bg-white flex justify-center items-center w-full aspect-1 relative">
+          <div className="p-4 rounded-md bg-white flex justify-center items-center w-full aspect-1 relative max-w-sm">
             <div className="flex space-x-2">
               {answer?.result ? (
                 <CheckCircleIcon className="w-8 h-8 text-green-500" />
