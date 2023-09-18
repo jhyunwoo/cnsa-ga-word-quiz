@@ -31,7 +31,7 @@ export default function Ranking() {
           {data.map((user: any, index: number) => (
             <div
               key={index}
-              className="w-full bg-white p-2 rounded-md flex justify-between items-center shadow-lg"
+              className="w-full bg-white p-2 rounded-md flex justify-between items-center hover:shadow-md transition duration-200"
             >
               <div className="font-semibold text-lg">
                 {index + 1}위 {user.name}
