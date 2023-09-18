@@ -4,6 +4,7 @@ import { authOptions } from "../api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
 import Layout from "@/components/Layout";
 import type { Metadata } from "next";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "이뿌영 퀴즈 | 프로필",
@@ -23,5 +24,10 @@ export default async function ProfileLayout({
 
   if (!session) redirect("/auth/signin");
 
-  return <Layout>{children}</Layout>;
+  return (
+    <>
+      <Layout>{children}</Layout>
+      <Footer />
+    </>
+  );
 }
