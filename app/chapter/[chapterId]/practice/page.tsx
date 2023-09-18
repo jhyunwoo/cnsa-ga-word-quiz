@@ -73,7 +73,7 @@ export default function Practice({
     <>
       {answer?.result !== null ? (
         <div className="w-full h-screen flex justify-center items-center p-8">
-          <div className="p-4 rounded-md bg-white flex justify-center items-center w-full aspect-1 relative max-w-sm">
+          <div className="p-4 rounded-md bg-white flex justify-center items-center w-full aspect-1 relative max-w-sm shadow-lg">
             <div className="flex space-x-2">
               {answer?.result ? (
                 <CheckCircleIcon className="w-8 h-8 text-green-500" />
@@ -94,7 +94,7 @@ export default function Practice({
         </div>
       ) : (
         <div className="w-full min-h-screen flex flex-col justify-center items-center p-4 pt-14">
-          <div className="p-4 rounded-lg bg-white text-lg font-semibold shadow-md w-full my-4">
+          <div className="p-4 rounded-lg bg-white text-lg font-semibold shadow-md w-full my-4 md:max-w-md">
             {quiz.length > 0 ? (
               <div>
                 {count + 1}. {quiz[count]?.question}
@@ -105,9 +105,12 @@ export default function Practice({
           </div>
 
           {quiz.length > 0 && count < quiz.length ? (
-            <form onSubmit={handleSubmit(onSubmit)} className="w-full">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="w-full md:flex md:flex-col"
+            >
               {quiz[count].type === "word" ? (
-                <div className="w-full p-4 rounded-md bg-white shadow-md">
+                <div className="w-full p-4 rounded-md bg-white shadow-md max-w-md md:mx-auto">
                   <input
                     placeholder="정답을 입력해주세요."
                     {...register("userAnswer", { required: true })}
@@ -120,7 +123,7 @@ export default function Practice({
                     {...register("userAnswer", { required: true })}
                     className="hidden"
                   />
-                  <div className="grid grid-cols-1 gap-2 w-full bg-white rounded-md p-4 shadow-md">
+                  <div className="grid grid-cols-1 gap-2 w-full bg-white rounded-md p-4 shadow-md md:max-w-md md:mx-auto">
                     {quiz[count].list.map((data, index) => (
                       <button
                         key={index}
@@ -142,19 +145,19 @@ export default function Practice({
                 type="submit"
                 className={`${
                   !watch("userAnswer") && "invisible"
-                } w-full bg-indigo-400 hover:bg-indigo-500 text-white font-semibold rounded-md my-4 p-2`}
+                } w-full bg-indigo-400 hover:bg-indigo-500 text-white font-semibold rounded-md my-4 p-2 md:max-w-md md:mx-auto`}
               >
                 정답 확인
               </button>
             </form>
           ) : (
-            <div className="w-full h-48 rounded-md bg-slate-200 animate-pulse" />
+            <div className="w-full h-48 rounded-md bg-slate-200 animate-pulse md:max-w-md" />
           )}
         </div>
       )}
       {quiz.length === count && count !== 0 ? (
         <div className="w-full h-screen flex justify-center items-center p-8 z-10 bg-slate-50 fixed top-0 left-0">
-          <div className="w-full bg-white rounded-lg shadow-lg p-4 flex justify-center items-center">
+          <div className="w-full bg-white rounded-lg shadow-lg p-4 flex justify-center items-center md:max-w-md">
             <div className="flex justify-center items-center flex-col w-full">
               <div className="text-xl font-bold py-4">학습 완료</div>
               <Link

@@ -15,19 +15,19 @@ export default function BottomBar() {
   const { status } = useSession();
   return (
     <div
-      className={`fixed bottom-0 left-0 w-full py-4 px-2 flex justify-center items-center ${
+      className={`fixed bottom-0 right-0 md:bottom-auto md:top-0 md:w-1/3 md:bg-slate-50 w-full py-4 md:py-1 px-2 flex justify-center items-center ${
         pathname.includes("/practice") || pathname.includes("/test")
           ? "hidden"
           : ""
       }`}
     >
-      <div className="bg-white rounded-full p-2 flex justify-around items-center w-full space-x-2 shadow-lg">
+      <div className="bg-white md:bg-slate-50 rounded-full p-2 md:p-0 flex justify-around items-center w-full space-x-2 shadow-lg md:shadow-none">
         <Link
           href={"/ranking"}
-          className={`p-2 rounded-full  flex flex-col items-center justify-center w-full  transition duration-200 ${
+          className={`p-2 md:p-1 rounded-full  flex flex-col items-center justify-center w-full  transition duration-200 ${
             pathname.includes("/ranking")
-              ? "bg-indigo-400 text-white hover:bg-indigo-500"
-              : "text-indigo-500 hover:bg-indigo-100"
+              ? "bg-indigo-500 text-white hover:bg-indigo-600"
+              : "text-indigo-600 hover:bg-indigo-100"
           }`}
         >
           <ChartBarIcon className="w-6 h-6" />
@@ -35,10 +35,10 @@ export default function BottomBar() {
         </Link>
         <Link
           href={"/"}
-          className={`p-2 rounded-full  flex flex-col items-center justify-center w-full  transition duration-200 ${
+          className={`p-2 rounded-full md:p-1  flex flex-col items-center justify-center w-full  transition duration-200 ${
             pathname === "/"
-              ? "bg-indigo-400 text-white hover:bg-indigo-500"
-              : "text-indigo-500 hover:bg-indigo-100"
+              ? "bg-indigo-500 text-white hover:bg-indigo-600"
+              : "text-indigo-600 hover:bg-indigo-100"
           }`}
         >
           <Square3Stack3DIcon className="w-6 h-6" />
@@ -47,7 +47,7 @@ export default function BottomBar() {
 
         {status === "loading" ? (
           <div
-            className={`p-2 rounded-full text-indigo-500 hover:bg-indigo-100 flex flex-col items-center justify-center w-full  transition duration-200 `}
+            className={`p-2 rounded-full text-indigo-600 hover:bg-indigo-100 flex flex-col items-center justify-center w-full  transition duration-200 `}
           >
             <ArrowPathIcon className="w-6 h-6 animate-spin" />
             <p className="text-xs">Loading...</p>
@@ -55,10 +55,10 @@ export default function BottomBar() {
         ) : status === "authenticated" ? (
           <Link
             href={"/profile"}
-            className={`p-2 rounded-full  flex flex-col items-center justify-center w-full  transition duration-200 ${
+            className={`p-2 md:p-1 rounded-full  flex flex-col items-center justify-center w-full  transition duration-200 ${
               pathname.includes("/profile")
-                ? "bg-indigo-400 text-white hover:bg-indigo-500"
-                : "text-indigo-500 hover:bg-indigo-100"
+                ? "bg-indigo-500 text-white hover:bg-indigo-600"
+                : "text-indigo-600 hover:bg-indigo-100"
             }`}
           >
             <UserCircleIcon className="w-6 h-6" />
@@ -67,10 +67,10 @@ export default function BottomBar() {
         ) : (
           <Link
             href={"/auth/signin"}
-            className={`p-2 rounded-full  flex flex-col items-center justify-center w-full  transition duration-200 ${
+            className={`p-2 md:p-1 rounded-full  flex flex-col items-center justify-center w-full  transition duration-200 ${
               pathname.includes("/auth")
-                ? "bg-indigo-400 text-white hover:bg-indigo-500"
-                : "text-indigo-500 hover:bg-indigo-100"
+                ? "bg-indigo-500 text-white hover:bg-indigo-600"
+                : "text-indigo-600 hover:bg-indigo-100"
             }`}
           >
             <ArrowRightOnRectangleIcon className="w-6 h-6" />

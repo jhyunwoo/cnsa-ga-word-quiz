@@ -33,7 +33,7 @@ export default async function Chapter({
           <div>단어 수 : {chapterInfo?.words.length}</div>
         </div>
       </div>
-      <div className="flex space-x-2 w-full mt-8 justify-around">
+      <div className="flex space-x-2 w-full mt-8 justify-around max-w-md mx-auto">
         <Link
           href={`/chapter/${params.chapterId}/practice`}
           className="p-2 px-4 text-center rounded-md ring-2 ring-indigo-400 hover:ring-indigo-500 bg-indigo-400 hover:bg-indigo-500 text-lg font-semibold text-white w-full transition duration-200"

@@ -56,6 +56,8 @@ export async function GET(request: Request) {
     meaningList.push(chapterInfo.words[i].meaning);
   }
 
+  chapterInfo.words.sort(() => Math.random() - 0.5);
+
   for (let i = 0; i < chapterInfo.words.length; i += 1) {
     let randomIndex = Math.floor(Math.random() * 2);
     const shuffledArray = [...meaningList].sort(() => Math.random() - 0.5);
@@ -74,5 +76,6 @@ export async function GET(request: Request) {
       });
     }
   }
+
   return NextResponse.json(quiz);
 }
