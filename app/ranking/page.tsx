@@ -36,7 +36,7 @@ export default function Ranking() {
               <div className="font-semibold text-lg">
                 {index + 1}위 {user.name}
               </div>
-              <div>정확도 {user.accuracy.toFixed(2)}%</div>
+              <div>정확도 {user.accuracy ? user.accuracy?.toFixed(2) : 0}%</div>
             </div>
           ))}
         </div>
