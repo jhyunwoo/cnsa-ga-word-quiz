@@ -188,7 +188,7 @@ export default function Practice({
         <div className="w-full h-screen flex justify-center items-center p-8 z-10 bg-slate-50 fixed top-0 left-0">
           <div className="w-full bg-white rounded-lg shadow-lg p-4 flex justify-center items-center">
             <div className="flex justify-center items-center flex-col w-full">
-              <div>
+              <div className="flex justify-center items-center flex-col">
                 <div className="text-xl font-bold py-4">테스트 완료</div>
                 <div>정확도 : {getAccuracy(result).toFixed(2)}%</div>
               </div>
