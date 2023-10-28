@@ -1,0 +1,772 @@
+[
+  {
+    "chapterId": "26강",
+    "origin": "syn(m)",
+    "meaningOfOrigin": "함께",
+    "word": "sympathy",
+    "meaning": "동정, 연민, 공"
+  },
+  {
+    "chapterId": "26강",
+    "origin": "syn(m)",
+    "meaningOfOrigin": "함께",
+    "word": "synonym",
+    "meaning": "동의어, 유의"
+  },
+  {
+    "chapterId": "26강",
+    "origin": "syn(m)",
+    "meaningOfOrigin": "함께",
+    "word": "symphony",
+    "meaning": "교향곡, 심포"
+  },
+  {
+    "chapterId": "26강",
+    "origin": "syn(m)",
+    "meaningOfOrigin": "함께",
+    "word": "symmetry",
+    "meaning": "대칭"
+  },
+  {
+    "chapterId": "26강",
+    "origin": "syn(m)",
+    "meaningOfOrigin": "함께",
+    "word": "synergy",
+    "meaning": "동반 상승 효과, 시너지 효과"
+  },
+  {
+    "chapterId": "27강",
+    "origin": "per",
+    "meaningOfOrigin": "완전히",
+    "word": "perceive",
+    "meaning": "인지하다, 감지하다"
+  },
+  {
+    "chapterId": "27강",
+    "origin": "per",
+    "meaningOfOrigin": "철저히",
+    "word": "persist",
+    "meaning": "고집하다, 집요하게 계속하다"
+  },
+  {
+    "chapterId": "27강",
+    "origin": "per",
+    "meaningOfOrigin": "~쪽으로",
+    "word": "permanent",
+    "meaning": "영구적인"
+  },
+  {
+    "chapterId": "27강",
+    "origin": "per",
+    "meaningOfOrigin": "완전히",
+    "word": "persevere",
+    "meaning": "인내하다, 계속하다"
+  },
+  {
+    "chapterId": "27강",
+    "origin": "per",
+    "meaningOfOrigin": "완전히",
+    "word": "perspective",
+    "meaning": "관점, 시각"
+  },
+  {
+    "chapterId": "28강",
+    "origin": "en",
+    "meaningOfOrigin": "만들다",
+    "word": "encourage",
+    "meaning": "격려하다, 용기를 북돋우다"
+  },
+  {
+    "chapterId": "28강",
+    "origin": "en",
+    "meaningOfOrigin": "만들다",
+    "word": "ensure",
+    "meaning": "안전하게 하다, 보장하다"
+  },
+  {
+    "chapterId": "28강",
+    "origin": "en",
+    "meaningOfOrigin": "만들다",
+    "word": "endanger",
+    "meaning": "위험에 빠뜨리다"
+  },
+  {
+    "chapterId": "28강",
+    "origin": "en",
+    "meaningOfOrigin": "만들다",
+    "word": "entitle",
+    "meaning": "자격(권리)을 주다"
+  },
+  {
+    "chapterId": "28강",
+    "origin": "en",
+    "meaningOfOrigin": "만들다",
+    "word": "enclose",
+    "meaning": "둘러싸다"
+  },
+  {
+    "chapterId": "29강",
+    "origin": "mono",
+    "meaningOfOrigin": "혼자서",
+    "word": "monologue",
+    "meaning": "독백"
+  },
+  {
+    "chapterId": "29강",
+    "origin": "mono",
+    "meaningOfOrigin": "하나",
+    "word": "monotonous",
+    "meaning": "단조로운, 변함없는"
+  },
+  {
+    "chapterId": "29강",
+    "origin": "mono",
+    "meaningOfOrigin": "혼자서",
+    "word": "monopoly",
+    "meaning": "독점, 독차지"
+  },
+  {
+    "chapterId": "29강",
+    "origin": "mono",
+    "meaningOfOrigin": "하나",
+    "word": "monolingual",
+    "meaning": "하나의 언어를 사용하는"
+  },
+  {
+    "chapterId": "29강",
+    "origin": "mono",
+    "meaningOfOrigin": "하나",
+    "word": "monorail",
+    "meaning": "모노레일(하나의 레일로 가는 기차)"
+  },
+  {
+    "chapterId": "30강",
+    "origin": "uni",
+    "meaningOfOrigin": "하나",
+    "word": "unify",
+    "meaning": "통합하다, 통일하다"
+  },
+  {
+    "chapterId": "30강",
+    "origin": "uni",
+    "meaningOfOrigin": "하나",
+    "word": "unilateral",
+    "meaning": "일방적인"
+  },
+  {
+    "chapterId": "30강",
+    "origin": "uni",
+    "meaningOfOrigin": "하나",
+    "word": "universe",
+    "meaning": "우주"
+  },
+  {
+    "chapterId": "30강",
+    "origin": "uni",
+    "meaningOfOrigin": "하나",
+    "word": "unicorn",
+    "meaning": "유니콘"
+  },
+  {
+    "chapterId": "30강",
+    "origin": "uni",
+    "meaningOfOrigin": "하나",
+    "word": "unisex",
+    "meaning": "남녀공용의"
+  },
+  {
+    "chapterId": "31강",
+    "origin": "act",
+    "meaningOfOrigin": "행동하다",
+    "word": "react",
+    "meaning": "반응하다, 반응을 보이다"
+  },
+  {
+    "chapterId": "31강",
+    "origin": "act",
+    "meaningOfOrigin": "행동하다",
+    "word": "interact",
+    "meaning": "소통하다"
+  },
+  {
+    "chapterId": "31강",
+    "origin": "act",
+    "meaningOfOrigin": "행동하다",
+    "word": "enact",
+    "meaning": "(법을)제정하다"
+  },
+  {
+    "chapterId": "31강",
+    "origin": "act",
+    "meaningOfOrigin": "행동하다",
+    "word": "transact",
+    "meaning": "거래하다"
+  },
+  {
+    "chapterId": "31강",
+    "origin": "act",
+    "meaningOfOrigin": "행동하다",
+    "word": "overact",
+    "meaning": "과장해서 행동하다"
+  },
+  {
+    "chapterId": "32강",
+    "origin": "nat",
+    "meaningOfOrigin": "태어난",
+    "word": "nation",
+    "meaning": "국가"
+  },
+  {
+    "chapterId": "32강",
+    "origin": "nat",
+    "meaningOfOrigin": "태어난",
+    "word": "nature",
+    "meaning": "자연, 본성"
+  },
+  {
+    "chapterId": "32강",
+    "origin": "nat",
+    "meaningOfOrigin": "태어난",
+    "word": "innate",
+    "meaning": "타고난, 선천적인"
+  },
+  {
+    "chapterId": "32강",
+    "origin": "nat",
+    "meaningOfOrigin": "태어난",
+    "word": "native",
+    "meaning": "타고난, 태어난 곳의"
+  },
+  {
+    "chapterId": "33강",
+    "origin": "cur",
+    "meaningOfOrigin": "달리다",
+    "word": "concur",
+    "meaning": "동시에 일어나다"
+  },
+  {
+    "chapterId": "33강",
+    "origin": "cur",
+    "meaningOfOrigin": "달리다",
+    "word": "occur",
+    "meaning": "일어나다, 발생하다"
+  },
+  {
+    "chapterId": "33강",
+    "origin": "cur",
+    "meaningOfOrigin": "달리다",
+    "word": "incur",
+    "meaning": "초래하다, 발생시키다"
+  },
+  {
+    "chapterId": "33강",
+    "origin": "cur",
+    "meaningOfOrigin": "달리다",
+    "word": "recur",
+    "meaning": "다시 일어나다"
+  },
+  {
+    "chapterId": "34강",
+    "origin": "cast",
+    "meaningOfOrigin": "던지다",
+    "word": "forecast",
+    "meaning": "예측하다, 예보하다"
+  },
+  {
+    "chapterId": "34강",
+    "origin": "cast",
+    "meaningOfOrigin": "던지다",
+    "word": "broadcast",
+    "meaning": "방송하다, 널리 알리다"
+  },
+  {
+    "chapterId": "34강",
+    "origin": "cast",
+    "meaningOfOrigin": "던지다",
+    "word": "outcast",
+    "meaning": "따돌림 받는 사람"
+  },
+  {
+    "chapterId": "34강",
+    "origin": "cast",
+    "meaningOfOrigin": "던지다",
+    "word": "downcast",
+    "meaning": "(눈을)내리 뜬, 풀이 죽은"
+  },
+  {
+    "chapterId": "34강",
+    "origin": "cast",
+    "meaningOfOrigin": "던지다",
+    "word": "overcast",
+    "meaning": "구름이 뒤덮인, 흐린"
+  },
+  {
+    "chapterId": "35강",
+    "origin": "cept",
+    "meaningOfOrigin": "취하다",
+    "word": "except",
+    "meaning": "~를 제외하고는"
+  },
+  {
+    "chapterId": "35강",
+    "origin": "cept",
+    "meaningOfOrigin": "취하다",
+    "word": "concept",
+    "meaning": "개념"
+  },
+  {
+    "chapterId": "35강",
+    "origin": "cept",
+    "meaningOfOrigin": "취하다",
+    "word": "precept",
+    "meaning": "가르침, 교훈"
+  },
+  {
+    "chapterId": "35강",
+    "origin": "cept",
+    "meaningOfOrigin": "취하다",
+    "word": "intercept",
+    "meaning": "가로막다, 가로채다"
+  },
+  {
+    "chapterId": "36강",
+    "origin": "ceive",
+    "meaningOfOrigin": "붙잡다",
+    "word": "receive",
+    "meaning": "받다, 받아들이다"
+  },
+  {
+    "chapterId": "36강",
+    "origin": "ceive",
+    "meaningOfOrigin": "붙잡다",
+    "word": "perceive",
+    "meaning": "인식하다, 인지하다"
+  },
+  {
+    "chapterId": "36강",
+    "origin": "ceive",
+    "meaningOfOrigin": "붙잡다",
+    "word": "deceive",
+    "meaning": "속이다, 기만하다"
+  },
+  {
+    "chapterId": "36강",
+    "origin": "ceive",
+    "meaningOfOrigin": "붙잡다",
+    "word": "conceive",
+    "meaning": "(생각을)품다, 상상하다, 임신하다"
+  },
+  {
+    "chapterId": "37강",
+    "origin": "mit",
+    "meaningOfOrigin": "보내다",
+    "word": "transmit",
+    "meaning": "전송하다, 전달하다"
+  },
+  {
+    "chapterId": "37강",
+    "origin": "mit",
+    "meaningOfOrigin": "보내다",
+    "word": "admit",
+    "meaning": "인정하다, 승인하다"
+  },
+  {
+    "chapterId": "37강",
+    "origin": "mit",
+    "meaningOfOrigin": "보내다",
+    "word": "permit",
+    "meaning": "허가(증), 용납하다"
+  },
+  {
+    "chapterId": "37강",
+    "origin": "mit",
+    "meaningOfOrigin": "보내다",
+    "word": "submit",
+    "meaning": "제출하다, 복종하다"
+  },
+  {
+    "chapterId": "37강",
+    "origin": "mit",
+    "meaningOfOrigin": "보내다",
+    "word": "emit",
+    "meaning": "내뿜다, 방출하다"
+  },
+  {
+    "chapterId": "38강",
+    "origin": "fer",
+    "meaningOfOrigin": "옮기다",
+    "word": "transfer",
+    "meaning": "옮기다, 이동하다"
+  },
+  {
+    "chapterId": "38강",
+    "origin": "fer",
+    "meaningOfOrigin": "옮기다",
+    "word": "differ",
+    "meaning": "다르다, 의견을 달리하다"
+  },
+  {
+    "chapterId": "38강",
+    "origin": "fer",
+    "meaningOfOrigin": "옮기다",
+    "word": "offer",
+    "meaning": "제시하다, 권하다"
+  },
+  {
+    "chapterId": "38강",
+    "origin": "fer",
+    "meaningOfOrigin": "옮기다",
+    "word": "refer",
+    "meaning": "인용하다, 참조하다"
+  },
+  {
+    "chapterId": "38강",
+    "origin": "fer",
+    "meaningOfOrigin": "옮기다",
+    "word": "prefer",
+    "meaning": "선호하다"
+  },
+  {
+    "chapterId": "39강",
+    "origin": "rupt",
+    "meaningOfOrigin": "깨다",
+    "word": "disrupt",
+    "meaning": "방해하다"
+  },
+  {
+    "chapterId": "39강",
+    "origin": "rupt",
+    "meaningOfOrigin": "깨다",
+    "word": "corrupt",
+    "meaning": "부패한"
+  },
+  {
+    "chapterId": "39강",
+    "origin": "rupt",
+    "meaningOfOrigin": "깨다",
+    "word": "erupt",
+    "meaning": "분출하다, 폭발하다"
+  },
+  {
+    "chapterId": "39강",
+    "origin": "rupt",
+    "meaningOfOrigin": "깨다",
+    "word": "interrupt",
+    "meaning": "방해하다"
+  },
+  {
+    "chapterId": "40강",
+    "origin": "duc",
+    "meaningOfOrigin": "이끌다",
+    "word": "produce",
+    "meaning": "생산하다, 제작하다"
+  },
+  {
+    "chapterId": "40강",
+    "origin": "duc",
+    "meaningOfOrigin": "이끌다",
+    "word": "introduce",
+    "meaning": "소개하다, 도입하다"
+  },
+  {
+    "chapterId": "40강",
+    "origin": "duc",
+    "meaningOfOrigin": "이끌다",
+    "word": "reduce",
+    "meaning": "줄이다, 감소시키다"
+  },
+  {
+    "chapterId": "40강",
+    "origin": "duc",
+    "meaningOfOrigin": "이끌다",
+    "word": "conduct",
+    "meaning": "지휘하다, 수행하다"
+  },
+  {
+    "chapterId": "40강",
+    "origin": "duc",
+    "meaningOfOrigin": "이끌다",
+    "word": "induce",
+    "meaning": "유도하다, 유인하다"
+  },
+  {
+    "chapterId": "41강",
+    "origin": "bat",
+    "meaningOfOrigin": "치다",
+    "word": "bat",
+    "meaning": "(야구)방망이, 방망이로 치다"
+  },
+  {
+    "chapterId": "41강",
+    "origin": "bat",
+    "meaningOfOrigin": "치다",
+    "word": "combat",
+    "meaning": "전투, 싸우다"
+  },
+  {
+    "chapterId": "41강",
+    "origin": "bat",
+    "meaningOfOrigin": "치다",
+    "word": "debate",
+    "meaning": "논의, 토론하다"
+  },
+  {
+    "chapterId": "41강",
+    "origin": "bat",
+    "meaningOfOrigin": "치다",
+    "word": "rebate",
+    "meaning": "환불, 할인, 리베이트"
+  },
+  {
+    "chapterId": "42강",
+    "origin": "fec",
+    "meaningOfOrigin": "만들다",
+    "word": "affect",
+    "meaning": "영향을 미치다"
+  },
+  {
+    "chapterId": "42강",
+    "origin": "fec",
+    "meaningOfOrigin": "만들다",
+    "word": "effect",
+    "meaning": "영향, 효과"
+  },
+  {
+    "chapterId": "42강",
+    "origin": "fec",
+    "meaningOfOrigin": "만들다",
+    "word": "defect",
+    "meaning": "결함"
+  },
+  {
+    "chapterId": "42강",
+    "origin": "fec",
+    "meaningOfOrigin": "만들다",
+    "word": "infect",
+    "meaning": "감염시키다"
+  },
+  {
+    "chapterId": "43강",
+    "origin": "ject",
+    "meaningOfOrigin": "던지다",
+    "word": "project",
+    "meaning": "투영하다, 프로젝트"
+  },
+  {
+    "chapterId": "43강",
+    "origin": "ject",
+    "meaningOfOrigin": "던지다",
+    "word": "reject",
+    "meaning": "거절하다"
+  },
+  {
+    "chapterId": "43강",
+    "origin": "ject",
+    "meaningOfOrigin": "던지다",
+    "word": "inject",
+    "meaning": "넣다, 주사하다"
+  },
+  {
+    "chapterId": "43강",
+    "origin": "ject",
+    "meaningOfOrigin": "던지다",
+    "word": "subject",
+    "meaning": "~에 종속된, 복종시키다"
+  },
+  {
+    "chapterId": "44강",
+    "origin": "fin",
+    "meaningOfOrigin": "끝내다, 경계",
+    "word": "finish",
+    "meaning": "끝내다, 마지막 부분"
+  },
+  {
+    "chapterId": "44강",
+    "origin": "fin",
+    "meaningOfOrigin": "끝내다, 경계",
+    "word": "refine",
+    "meaning": "정제하다, 개선하다"
+  },
+  {
+    "chapterId": "44강",
+    "origin": "fin",
+    "meaningOfOrigin": "끝내다, 경계",
+    "word": "define",
+    "meaning": "정의하다, 규정하다"
+  },
+  {
+    "chapterId": "44강",
+    "origin": "fin",
+    "meaningOfOrigin": "끝내다, 경계",
+    "word": "confine",
+    "meaning": "가두다, 제한하다"
+  },
+  {
+    "chapterId": "45강",
+    "origin": "form",
+    "meaningOfOrigin": "형태, 형성하다",
+    "word": "uniform",
+    "meaning": "제복, 같은 형태의"
+  },
+  {
+    "chapterId": "45강",
+    "origin": "form",
+    "meaningOfOrigin": "형태, 형성하다",
+    "word": "inform",
+    "meaning": "알리다, 정보를 주다"
+  },
+  {
+    "chapterId": "45강",
+    "origin": "form",
+    "meaningOfOrigin": "형태, 형성하다",
+    "word": "reform",
+    "meaning": "개혁하다, 개선"
+  },
+  {
+    "chapterId": "45강",
+    "origin": "form",
+    "meaningOfOrigin": "형태, 형성하다",
+    "word": "transform",
+    "meaning": "바꾸다, 변하다"
+  },
+  {
+    "chapterId": "46강",
+    "origin": "mot",
+    "meaningOfOrigin": "움직이다",
+    "word": "promote",
+    "meaning": "홍보하다, 승진시키다"
+  },
+  {
+    "chapterId": "46강",
+    "origin": "mot",
+    "meaningOfOrigin": "움직이다",
+    "word": "remote",
+    "meaning": "먼, 멀리 떨어진"
+  },
+  {
+    "chapterId": "46강",
+    "origin": "mot",
+    "meaningOfOrigin": "움직이다",
+    "word": "motor",
+    "meaning": "모터, 엔진"
+  },
+  {
+    "chapterId": "46강",
+    "origin": "mot",
+    "meaningOfOrigin": "움직이다",
+    "word": "emoion",
+    "meaning": "감정"
+  },
+  {
+    "chapterId": "47강",
+    "origin": "part",
+    "meaningOfOrigin": "부분",
+    "word": "apart",
+    "meaning": "떨어진"
+  },
+  {
+    "chapterId": "47강",
+    "origin": "part",
+    "meaningOfOrigin": "부분",
+    "word": "part time",
+    "meaning": "시간제인, 비상근"
+  },
+  {
+    "chapterId": "47강",
+    "origin": "part",
+    "meaningOfOrigin": "부분",
+    "word": "counterpart",
+    "meaning": "상대방"
+  },
+  {
+    "chapterId": "47강",
+    "origin": "part",
+    "meaningOfOrigin": "부분",
+    "word": "particle",
+    "meaning": "입자, 조각"
+  },
+  {
+    "chapterId": "48강",
+    "origin": "bio",
+    "meaningOfOrigin": "생명",
+    "word": "biology",
+    "meaning": "생물학"
+  },
+  {
+    "chapterId": "48강",
+    "origin": "bio",
+    "meaningOfOrigin": "생명",
+    "word": "biodiversity",
+    "meaning": "생물 다양성"
+  },
+  {
+    "chapterId": "48강",
+    "origin": "bio",
+    "meaningOfOrigin": "생명",
+    "word": "biorhythm",
+    "meaning": "생체리듬"
+  },
+  {
+    "chapterId": "48강",
+    "origin": "bio",
+    "meaningOfOrigin": "생명",
+    "word": "biography",
+    "meaning": "전기, 일대기"
+  },
+  {
+    "chapterId": "49강",
+    "origin": "lect",
+    "meaningOfOrigin": "모으다, 선택하다",
+    "word": "collect",
+    "meaning": "수집하다, 모으다"
+  },
+  {
+    "chapterId": "49강",
+    "origin": "lect",
+    "meaningOfOrigin": "모으다, 선택하다",
+    "word": "recollect",
+    "meaning": "회상하다, 생각해내다"
+  },
+  {
+    "chapterId": "49강",
+    "origin": "lect",
+    "meaningOfOrigin": "모으다, 선택하다",
+    "word": "elect",
+    "meaning": "뽑다, 선출하다"
+  },
+  {
+    "chapterId": "49강",
+    "origin": "lect",
+    "meaningOfOrigin": "모으다, 선택하다",
+    "word": "neglect",
+    "meaning": "방치하다, 소홀히 하다"
+  },
+  {
+    "chapterId": "50강",
+    "origin": "auto",
+    "meaningOfOrigin": "스스로",
+    "word": "automobile",
+    "meaning": "자동차(의)"
+  },
+  {
+    "chapterId": "50강",
+    "origin": "auto",
+    "meaningOfOrigin": "스스로",
+    "word": "autograph",
+    "meaning": "자필 서명, 사인"
+  },
+  {
+    "chapterId": "50강",
+    "origin": "auto",
+    "meaningOfOrigin": "스스로",
+    "word": "autoimmune",
+    "meaning": "자기 면역의"
+  },
+  {
+    "chapterId": "50강",
+    "origin": "auto",
+    "meaningOfOrigin": "스스로",
+    "word": "automatic",
+    "meaning": "자동의"
+  }
+]
