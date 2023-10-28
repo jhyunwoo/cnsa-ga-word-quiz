@@ -113,6 +113,7 @@ export default function Practice({
                 <div className="w-full p-4 rounded-md bg-white shadow-md max-w-md md:mx-auto">
                   <input
                     placeholder="정답을 입력해주세요."
+                    autoComplete="off"
                     {...register("userAnswer", { required: true })}
                     className="p-2 outline-none ring-2 ring-indigo-400 focus:ring-indigo-500 transition duration-200 rounded-md w-full"
                   />
