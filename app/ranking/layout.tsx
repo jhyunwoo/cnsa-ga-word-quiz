@@ -15,7 +15,9 @@ export const metadata: Metadata = {
 export default function RankingLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Layout>{children}</Layout>
+      <Layout>
+        <div className="w-full max-w-3xl mx-auto">{children}</div>
+      </Layout>
       <Footer />
     </>
   );
